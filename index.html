@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outreach Bot</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem; }
+  h1 { font-size: 1.7rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .35rem; border-radius: 3px; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .7; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<h1>Outreach Bot</h1>
+<p class="sub">A personal, single-user tool that helps Gaurav Rathore keep track of his own job-search correspondence.</p>
+
+<h2>What it is</h2>
+<p>Outreach Bot is a private automation used by one person, on one Gmail account, to manage
+his own job-search follow-ups. It is not a product, not a service, and has no users other
+than its author. It is not offered to, sold to, or usable by anyone else.</p>
+
+<h2>What it does</h2>
+<p>Once a day it reads the owner's own Gmail threads to work out which of his earlier
+outreach emails are still genuinely awaiting a response, and which should be left alone
+because the person replied, the address bounced, or he already said he would stop writing.
+For the remaining threads it prepares a short draft reply in the owner's own mailbox.</p>
+<p>A human owns every outcome. The tool prepares drafts inside the owner's account; it does
+not act on anyone else's behalf and does not contact anyone the owner had not already
+written to himself.</p>
+
+<h2>Access it requests</h2>
+<ul>
+  <li><code>gmail.readonly</code> — to read the owner's own threads and decide what still needs a reply</li>
+  <li><code>gmail.compose</code> — to create drafts in the owner's own mailbox</li>
+  <li><code>gmail.modify</code> — to discard a queued draft if the recipient replies first</li>
+</ul>
+
+<h2>Contact</h2>
+<p>rathore.gaurav1007@gmail.com</p>
+
+<footer><a href="./privacy.html">Privacy policy</a></footer>
+</body>
+</html>
